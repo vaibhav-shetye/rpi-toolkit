@@ -1,2 +1,6 @@
 alias update="/home/pi/rpi-toolkit/update.sh"
 alias eip="curl icanhazip.com"
+alias tree="tree -h"
+alias ll="ls -lrth"
+alias sdown="sudo shutdown -P now"
+alias rm="rm -v"

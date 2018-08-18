@@ -12,3 +12,4 @@ apt-get autoremove -y
 apt-get autoclean -y
 EOF
 
+~/telegram.sh "`hostname` : Update completed at `date`"

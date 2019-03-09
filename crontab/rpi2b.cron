@@ -21,14 +21,12 @@
 # 
 # m h  dom mon dow   command
 
-12 7-23/4 * * * ~/duckdns/duck.sh >/dev/null 2>&1
 
-17 5 * * * ~/update.sh > update.log 
-7 4 * * * sudo /opt/AtoMiC-ToolKit/maintenance/distro-services-update-cron.sh #AtoMiC-ToolKit
+17 5 * * * ~/rpi-toolkit/update.sh > update.log 
 
 15 2 * * * sudo reboot
 
 @reboot sleep 20; ~/duckdns/duck.sh >/dev/null 2>&1
 @reboot sleep 15; ~/telegram.sh "`hostname` rebooted @ `date`"
 
-0 5 * * * crontab -l > ~/rpi-toolkit/crontab/`hostname`.crontab
+0 5 * * * crontab -l > ~/rpi-toolkit/crontab/`hostname`.cron

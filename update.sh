@@ -1,6 +1,6 @@
 echo "Updating Raspberry Pi Firmware"
 
-sudo rpi-update
+sudo rpi-update < echo "y"
 
 echo "Updating all istalled applications"
 
